@@ -5,11 +5,6 @@
 }
 
 body {
-  /* background-image: url(../assest/img/marker-pen-clip-near-keyboard-sticker.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; */
   font-family: "Poppins", serif;
   display: grid;
   min-height: 100vh;
