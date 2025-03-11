@@ -50,10 +50,10 @@ nav a:hover {
 
 .box-main-home {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   align-items: center;
   flex-direction: column;
-  margin-top: 10%;
+  /* margin-top: 10%; */
 }
 
 .parrafo-main-home {
@@ -290,12 +290,13 @@ a:hover {
 
 footer {
   text-align: end;
-  margin-right: 30px;
+  background-color: #e8e8e8;
 }
 
 .parrafo-footer {
   font-size: 10px;
   font-weight: 400;
+  margin-right: 30px;
 }
 
 /* MEDIA QUERYS */
