@@ -1,10 +1,10 @@
-@import 'partials/base/reset';
-@import 'partials/base/tipografia';
+/** @format */
+
+@use "partials/base/reset";
+@use "partials/base/tipografia";
 
 body {
-
 	font-family: "Poppins", serif;
-
 }
 
 /* Header */
@@ -294,7 +294,7 @@ a:hover {
 
 footer {
 	text-align: end;
-	
+
 	background-color: #e8e8e8;
 }
 
