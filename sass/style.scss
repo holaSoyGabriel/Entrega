@@ -14,46 +14,13 @@
 /* Components */
 
 @import "partials/components/index";
+@import "partials/components/header";
 body {
 	background-color: $color-background;
 	font-family: "Poppins", serif;
 }
 
 /* Header */
-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 10px;
-}
-
-.icon {
-	font-weight: 600;
-}
-
-.icon img {
-	height: 50px;
-	margin-right: 10px;
-}
-
-.navbar-nav {
-	font-size: 1.1rem;
-}
-
-.nav-link {
-	margin-left: 20px;
-}
-
-a:not(.link-central) {
-	text-decoration: none;
-	color: black;
-}
-
-nav a:hover {
-	color: #bababa;
-}
-
-
 
 
 

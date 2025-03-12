@@ -7,8 +7,13 @@
 }
 
 /* Utilities */
+/** @format */
 /* Components */
-/* Home */
+/**
+ * Home
+ *
+ * @format
+ */
 main {
   display: flex;
   flex-direction: row;
@@ -17,17 +22,11 @@ main {
 
 .section-1 {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   margin-left: 10px;
 }
 
-/* .box-main-home {
-
-
-
-}
- */
 .box-main-img img {
   width: 700px;
   height: 600px;
@@ -43,12 +42,6 @@ main {
   font-size: 50px;
 }
 
-body {
-  background-color: #d0ccc4;
-  font-family: "Poppins", serif;
-}
-
-/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -71,10 +64,6 @@ header {
 
 .nav-link {
   margin-left: 20px;
-}
-
-a:not(.link-central) {
-  text-decoration: none;
   color: black;
 }
 
@@ -82,6 +71,12 @@ nav a:hover {
   color: #bababa;
 }
 
+body {
+  background-color: #d0ccc4;
+  font-family: "Poppins", serif;
+}
+
+/* Header */
 /* Inicio */
 .main-inicio {
   align-self: center;
