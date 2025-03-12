@@ -6,7 +6,33 @@
   padding: 0;
 }
 
-/*Utilities*/
+/* Utilities */
+/* Components */
+/* Home */
+.main-home {
+  background-color: #d0ccc4;
+}
+
+.box-main-home {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.parrafo-main-home {
+  font-weight: 500;
+}
+
+.h1-1 {
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.h2-1 {
+  font-size: 30px;
+  margin-bottom: 2rem;
+}
+
 body {
   font-family: "Poppins", serif;
 }
@@ -43,31 +69,6 @@ a:not(.link-central) {
 
 nav a:hover {
   color: #bababa;
-}
-
-/* Home */
-.main-home {
-  background-color: #d0ccc4;
-}
-
-.box-main-home {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.parrafo-main-home {
-  font-weight: 500;
-}
-
-.h1-1 {
-  font-weight: 600;
-  font-size: 50px;
-}
-
-.h2-1 {
-  font-size: 30px;
-  margin-bottom: 2rem;
 }
 
 /* Inicio */
