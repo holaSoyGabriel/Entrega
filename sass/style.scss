@@ -1,7 +1,13 @@
 /** @format */
 
+/* BASE */
+
 @use "partials/base/reset";
 @use "partials/base/tipografia";
+
+/*Utilities*/
+
+
 
 body {
 	font-family: "Poppins", serif;
@@ -41,7 +47,7 @@ nav a:hover {
 	color: #bababa;
 }
 
-/* **** Main **** */
+
 
 /* Home */
 .main-home {
@@ -50,10 +56,10 @@ nav a:hover {
 
 .box-main-home {
 	display: flex;
-	/* flex-wrap: wrap; */
+
 	align-items: center;
 	flex-direction: column;
-	/* margin-top: 10%; */
+
 }
 
 .parrafo-main-home {
