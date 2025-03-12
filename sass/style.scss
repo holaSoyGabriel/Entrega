@@ -2,18 +2,18 @@
 
 /* BASE */
 
-@use "partials/base/reset";
-@use "partials/base/tipografia";
+@import "partials/base/reset";
+@import "partials/base/tipografia";
 
 /* Utilities */
 
-@use "partials/utilities/maps";
-@use "partials/utilities/mixin";
-@use "partials/utilities/variables";
+@import "partials/utilities/maps";
+@import "partials/utilities/mixin";
+@import "partials/utilities/variables";
 
 /* Components */
 
-@use "partials/components/index";
+@import "partials/components/index";
 body {
 	font-family: "Poppins", serif;
 }

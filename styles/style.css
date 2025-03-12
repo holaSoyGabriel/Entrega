@@ -9,14 +9,32 @@
 /* Utilities */
 /* Components */
 /* Home */
-.main-home {
+main {
   background-color: #d0ccc4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-.box-main-home {
+.section-1 {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  /* 	align-items: center; */
+  /* justify-content: center; */
   flex-direction: column;
+  margin-left: 10px;
+}
+
+/* .box-main-home {
+
+
+
+}
+ */
+.box-main-img img {
+  width: 700px;
+  height: 600px;
+  margin: 20px;
 }
 
 .parrafo-main-home {
@@ -26,11 +44,6 @@
 .h1-1 {
   font-weight: 600;
   font-size: 50px;
-}
-
-.h2-1 {
-  font-size: 30px;
-  margin-bottom: 2rem;
 }
 
 body {
