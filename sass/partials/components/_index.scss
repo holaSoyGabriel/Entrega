@@ -1,7 +1,7 @@
 /* Home */
 
 main{
-	background-color: $color-background-main;
+	
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -10,8 +10,6 @@ main{
 .section-1{
    display: flex;
     justify-content: center;
-    /* 	align-items: center; */
-        /* justify-content: center; */
     flex-direction: column;
     margin-left: 10px;
 }
