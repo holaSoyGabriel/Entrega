@@ -67,7 +67,7 @@ main .box-main-img img {
   body main .box-main-img img {
     width: 400px;
     height: 300px;
-    margin: 10px;
+    margin: 30px 10px 30px 10px;
   }
   body footer {
     padding: 20px;

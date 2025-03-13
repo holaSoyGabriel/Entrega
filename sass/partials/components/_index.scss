@@ -51,7 +51,7 @@ main {
 			.box-main-img {
 				img {
 					@include medidas(400px, 300px);
-					margin: 10px;
+					margin: 30px 10px 30px 10px;
 				}
 			}
 		}
