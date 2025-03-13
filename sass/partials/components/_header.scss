@@ -1,3 +1,5 @@
+/** @format */
+
 header {
 	display: flex;
 	justify-content: space-between;
@@ -9,23 +11,22 @@ header {
 	font-weight: 600;
 }
 
-.icon img {
-	height: 50px;
-	margin-right: 10px;
+.icon {
+	img {
+		height: 50px;
+		margin-right: 10px;
+	}
 }
 
 .navbar-nav {
-	font-size: 1.1rem;
-   
+	font-size: map-get($map: $font-sizes, $key: xs);
 }
 
 .nav-link {
 	margin-left: 20px;
-    color: black;
+	color: black;
 }
 
 nav a:hover {
 	color: #bababa;
 }
-
-

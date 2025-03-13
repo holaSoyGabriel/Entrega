@@ -11,14 +11,13 @@ main {
 }
 
 .section-1 {
-	@include flex (flex, column, center);
+	@include flex(flex, column, center);
 	margin-left: 10px;
 }
 
 .box-main-img {
 	img {
-		width: 700px;
-		height: 600px;
+		@include medidas(700px, 600px);
 		margin: 20px;
 	}
 }

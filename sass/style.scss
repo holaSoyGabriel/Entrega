@@ -15,14 +15,7 @@
 
 @import "partials/components/index";
 @import "partials/components/header";
-body {
-	background-color: $color-background;
-	font-family: "Poppins", serif;
-}
-
-/* Header */
-
-
+@import "partials/components/footer";
 
 /* Inicio */
 
@@ -246,17 +239,7 @@ a:hover {
 	color: #bababa;
 }
 
-footer {
-	text-align: end;
 
-	background-color: #e8e8e8;
-}
-
-.parrafo-footer {
-	font-size: 10px;
-	font-weight: 400;
-	margin-right: 30px;
-}
 
 /* MEDIA QUERYS */
 

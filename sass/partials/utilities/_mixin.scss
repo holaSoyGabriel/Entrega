@@ -5,3 +5,8 @@
 	flex-direction: $direction;
 	justify-content: $justify;
 }
+
+@mixin medidas ($ancho, $alto){
+	width: $ancho;
+	height: $alto;
+}
