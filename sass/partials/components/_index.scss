@@ -6,6 +6,7 @@
 
 main {
 	@include flex(flex, row, space-evenly);
+
 	.section-1 {
 		@include flex(flex, column, center);
 		margin-left: 10px;
@@ -14,6 +15,9 @@ main {
 			font-weight: 600;
 			font-size: 50px;
 		}
+		p {
+			font-weight: 500;
+		}
 	}
 	.box-main-img {
 		img {
@@ -21,8 +25,45 @@ main {
 			margin: 20px;
 		}
 	}
+}
 
-	p {
-		font-weight: 500;
+@media (max-width: 450px) {
+	body {
+		@include flex(flex, column, center);
+		header {
+			flex-direction: column;
+			align-items: center;
+			padding-bottom: 20px;
+		}
+		main {
+			flex-wrap: wrap;
+			text-align: center;
+			.section-1 {
+				h1 {
+					font-weight: 600;
+					font-size: 30px;
+				}
+				p {
+					font-size: map-get($map: $font-sizes, $key: xs);
+					font-weight: 500;
+				}
+			}
+			.box-main-img {
+				img {
+					@include medidas(400px, 300px);
+					margin: 10px;
+				}
+			}
+		}
+		footer {
+			padding: 20px;
+			@include flex(flex, column-reverse, center);
+			.div-footer-1 {
+				text-align: center;
+			}
+			.div-footer-2{
+				text-align: center;
+			}
+		}
 	}
 }

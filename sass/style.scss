@@ -18,6 +18,7 @@
 @import "partials/components/footer";
 @import "partials/components/body";
 
+
 /* Inicio */
 
 .main-inicio {
@@ -240,76 +241,4 @@ a:hover {
 	color: #bababa;
 }
 
-/* MEDIA QUERYS */
 
-@media (max-width: 450px) {
-	header {
-		flex-direction: column;
-	}
-
-	nav {
-		padding: 5px 0px;
-	}
-
-	.main-home {
-		align-self: center;
-		height: calc(100vh - 40vh);
-	}
-
-	.main-inicio {
-		align-self: center;
-		height: calc(100vh - 30px);
-	}
-
-	.box-main-home {
-		text-align: center;
-	}
-
-	.box-main-inicio {
-		text-align: center;
-	}
-
-	.main-home h1 {
-		font-size: 40px;
-	}
-
-	.main-home h2 {
-		font-size: 20px;
-	}
-
-	.main-home p {
-		font-size: smaller;
-	}
-
-	.main-inicio h1 {
-		font-size: 40px;
-	}
-
-	.parrafo-main-inicio {
-		text-align: justify;
-		padding: 1rem;
-		font-weight: 600;
-	}
-
-	footer {
-		display: flex;
-		justify-content: center;
-		margin-left: 30px;
-	}
-}
-
-@media (min-width: 450px) and (max-width: 768px) {
-	.box-main {
-		text-align: center;
-	}
-
-	.main-home {
-		align-self: center;
-		height: calc(100vh - 50vh);
-	}
-
-	.main-inicio {
-		align-self: center;
-		height: calc(100vh - 30%);
-	}
-}

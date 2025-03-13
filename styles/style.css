@@ -32,15 +32,56 @@ main .section-1 h1 {
   font-weight: 600;
   font-size: 50px;
 }
+main .section-1 p {
+  font-weight: 500;
+}
 main .box-main-img img {
   width: 700px;
   height: 600px;
   margin: 20px;
 }
-main p {
-  font-weight: 500;
-}
 
+@media (max-width: 450px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body header {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  body main {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  body main .section-1 h1 {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  body main .section-1 p {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  body main .box-main-img img {
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+  }
+  body footer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  body footer .div-footer-1 {
+    text-align: center;
+  }
+  body footer .div-footer-2 {
+    text-align: center;
+  }
+}
 /** @format */
 header {
   display: flex;
@@ -108,7 +149,7 @@ footer .div-footer-2 .mini-div1 p {
 footer .div-footer-2 .mini-div2 {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: space-between;
   margin-right: 15px;
 }
 footer .div-footer-2 .mini-div2 p {
@@ -117,12 +158,15 @@ footer .div-footer-2 .mini-div2 p {
 footer p {
   font-size: 14px;
   font-weight: 400;
-  /* text-align: center; */
 }
 
 /** @format */
 body {
   background-image: linear-gradient(to right, #cfcdc7, #847c7c);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   font-family: "Poppins", serif;
 }
 
@@ -342,65 +386,6 @@ body {
 
 a:hover {
   color: #bababa;
-}
-
-/* MEDIA QUERYS */
-@media (max-width: 450px) {
-  header {
-    flex-direction: column;
-  }
-  nav {
-    padding: 5px 0px;
-  }
-  .main-home {
-    align-self: center;
-    height: 60vh;
-  }
-  .main-inicio {
-    align-self: center;
-    height: calc(100vh - 30px);
-  }
-  .box-main-home {
-    text-align: center;
-  }
-  .box-main-inicio {
-    text-align: center;
-  }
-  .main-home h1 {
-    font-size: 40px;
-  }
-  .main-home h2 {
-    font-size: 20px;
-  }
-  .main-home p {
-    font-size: smaller;
-  }
-  .main-inicio h1 {
-    font-size: 40px;
-  }
-  .parrafo-main-inicio {
-    text-align: justify;
-    padding: 1rem;
-    font-weight: 600;
-  }
-  footer {
-    display: flex;
-    justify-content: center;
-    margin-left: 30px;
-  }
-}
-@media (min-width: 450px) and (max-width: 768px) {
-  .box-main {
-    text-align: center;
-  }
-  .main-home {
-    align-self: center;
-    height: 50vh;
-  }
-  .main-inicio {
-    align-self: center;
-    height: calc(100vh - 30%);
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
