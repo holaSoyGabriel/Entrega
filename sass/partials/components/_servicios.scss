@@ -1,0 +1,19 @@
+/** @format */
+
+.main-inicio {
+	align-self: center;
+	height: calc(100vh - 100px);
+}
+
+.box-main-inicio {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 1rem;
+}
+
+.parrafo-main-inicio {
+	text-align: justify;
+	padding: 2.5rem;
+	font-weight: 600;
+}

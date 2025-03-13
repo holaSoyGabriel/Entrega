@@ -170,7 +170,7 @@ body {
   font-family: "Poppins", serif;
 }
 
-/* Inicio */
+/** @format */
 .main-inicio {
   align-self: center;
   height: calc(100vh - 100px);
@@ -189,6 +189,7 @@ body {
   font-weight: 600;
 }
 
+/* Inicio */
 /* Contactanos */
 .main-contact {
   display: flex;
