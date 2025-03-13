@@ -83,6 +83,7 @@ main .box-main-img img {
     text-align: center;
   }
 }
+/* @media (min-width: 350px) and (max-width: 728px) */
 /** @format */
 header {
   display: flex;

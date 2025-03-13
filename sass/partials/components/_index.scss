@@ -31,7 +31,7 @@ main {
 @media (min-width: 350px) and (max-width: 728px) {
 	body {
 		@include flex(flex, column, center);
-		header {
+		header { 
 			flex-direction: column;
 			align-items: center;
 			padding-bottom: 20px;
@@ -68,3 +68,5 @@ main {
 		}
 	}
 }
+
+/* @media (min-width: 350px) and (max-width: 728px) */
