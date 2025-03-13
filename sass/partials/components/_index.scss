@@ -6,25 +6,23 @@
 
 main {
 	@include flex(flex, row, space-evenly);
-}
+	.section-1 {
+		@include flex(flex, column, center);
+		margin-left: 10px;
 
-.section-1 {
-	@include flex(flex, column, center);
-	margin-left: 10px;
-}
-
-.box-main-img {
-	img {
-		@include medidas(700px, 600px);
-		margin: 20px;
+		h1 {
+			font-weight: 600;
+			font-size: 50px;
+		}
 	}
-}
+	.box-main-img {
+		img {
+			@include medidas(700px, 600px);
+			margin: 20px;
+		}
+	}
 
-.parrafo-main-home {
-	font-weight: 500;
-}
-
-.h1-1 {
-	font-weight: 600;
-	font-size: 50px;
+	p {
+		font-weight: 500;
+	}
 }
