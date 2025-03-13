@@ -1,9 +1,7 @@
 /** @format */
 
 header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	@include flex(flex, row, space-between);
 	padding: 10px;
 }
 
@@ -19,11 +17,12 @@ header {
 }
 
 .navbar-nav {
-	font-size: map-get($map: $font-sizes, $key: xs);
+	font-size: map-get($map: $font-sizes, $key: m);
 }
 
 .nav-link {
 	margin-left: 20px;
+	font-weight: 500;
 	color: black;
 }
 

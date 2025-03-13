@@ -5,9 +5,7 @@
  */
 
 main {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
+	@include flex(flex, row, space-evenly);
 }
 
 .section-1 {

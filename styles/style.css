@@ -8,6 +8,9 @@
 
 /* Utilities */
 /** @format */
+/** @format */
+/** @format */
+/* #847c7c #cfcdc7*/
 /* Components */
 /**
  * Home
@@ -45,8 +48,8 @@ main {
 /** @format */
 header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   padding: 10px;
 }
 
@@ -60,11 +63,12 @@ header {
 }
 
 .navbar-nav {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .nav-link {
   margin-left: 20px;
+  font-weight: 500;
   color: black;
 }
 
@@ -74,13 +78,56 @@ nav a:hover {
 
 /** @format */
 footer {
-  text-align: end;
-  background-color: #e8e8e8;
+  background-color: rgb(232, 232, 232);
+  margin: 10px 10px 10px 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer h2 {
+  font-size: 32px;
+  color: #887c7c;
+}
+footer .div-footer-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .div-footer-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+footer .div-footer-2 .mini-div1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-right: 24px;
+}
+footer .div-footer-2 .mini-div1 p {
+  font-weight: 500;
+}
+footer .div-footer-2 .mini-div2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-right: 15px;
+}
+footer .div-footer-2 .mini-div2 p {
+  font-weight: 500;
 }
 footer p {
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 400;
-  margin-right: 30px;
+  /* text-align: center; */
+}
+
+/** @format */
+body {
+  background-image: linear-gradient(to right, #cfcdc7, #847c7c);
+  font-family: "Poppins", serif;
 }
 
 /* Inicio */

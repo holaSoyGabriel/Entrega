@@ -1,12 +1,42 @@
 /** @format */
 
 footer {
-	text-align: end;
-    
-	background-color: #e8e8e8;
+	background-color: rgba(232, 232, 232, 255);
+	margin: 10px 10px 10px 10px;
+	padding: 30px;
+	@include flex(flex, row, space-between);
+	flex-wrap: wrap;
+
+	h2 {
+		font-size: map-get($map: $font-sizes, $key: xl);
+		color: #887c7c;
+	}
+	.div-footer-1 {
+		@include flex(flex, column, center);
+	}
+
+	.div-footer-2 {
+		@include flex(flex, row, space-evenly);
+		.mini-div1 {
+			@include flex(flex, column, start);
+			p {
+				font-weight: 500;
+			}
+
+			margin-right: 24px;
+		}
+		.mini-div2 {
+			@include flex(flex, column, start);
+			margin-right: 15px;
+
+			p {
+				font-weight: 500;
+			}
+		}
+	}
 	p {
-		font-size: 10px;
+		font-size: map-get($map: $font-sizes, $key: xs);
 		font-weight: 400;
-		margin-right: 30px;
+		/* text-align: center; */
 	}
 }
