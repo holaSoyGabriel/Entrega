@@ -22,12 +22,13 @@ main {
 	.box-main-img {
 		img {
 			@include medidas(700px, 600px);
-			margin: 20px;
+			display: block;
+			margin: 0 20px;
 		}
 	}
 }
 
-@media (max-width: 450px) {
+@media (min-width: 350px) and (max-width: 728px) {
 	body {
 		@include flex(flex, column, center);
 		header {
@@ -50,13 +51,13 @@ main {
 			}
 			.box-main-img {
 				img {
-					@include medidas(400px, 300px);
+					@include medidas(350px, 300px);
 					margin: 30px 10px 30px 10px;
 				}
 			}
 		}
 		footer {
-			padding: 20px;
+			padding: 10px;
 			@include flex(flex, column-reverse, center);
 			.div-footer-1 {
 				text-align: center;

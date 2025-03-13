@@ -38,10 +38,11 @@ main .section-1 p {
 main .box-main-img img {
   width: 700px;
   height: 600px;
-  margin: 20px;
+  display: block;
+  margin: 0 20px;
 }
 
-@media (max-width: 450px) {
+@media (min-width: 350px) and (max-width: 728px) {
   body {
     display: flex;
     flex-direction: column;
@@ -65,12 +66,12 @@ main .box-main-img img {
     font-weight: 500;
   }
   body main .box-main-img img {
-    width: 400px;
+    width: 350px;
     height: 300px;
     margin: 30px 10px 30px 10px;
   }
   body footer {
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
