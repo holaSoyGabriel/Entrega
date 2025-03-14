@@ -178,13 +178,32 @@ body {
 /** @format */
 .main-servicios {
   text-align: center;
-}
-.main-servicios div {
+  flex-wrap: wrap;
   margin: 20px;
 }
-.main-servicios div h1 {
-  font-size: 50px;
-  color: black;
+.main-servicios .box-servicios img {
+  width: 1000px;
+  height: 500px;
+  mask-image: linear-gradient(black 80%, transparent);
+  margin: 40px;
+}
+.main-servicios .box-servicios h1 {
+  font-size: 100px;
+  margin-bottom: 10px;
+}
+.main-servicios .box-servicios #box-paginas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main-servicios .box-servicios #box-paginas img {
+  width: 100px;
+  height: 100px;
+  mask-image: none;
+}
+.main-servicios p {
+  font-size: 20px;
+  color: #191919;
 }
 
 .parrafo-main-inicio {

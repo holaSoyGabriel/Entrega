@@ -2,13 +2,32 @@
 
 .main-servicios {
 	text-align: center;
-	div {
-		h1 {
-			font-size: map-get($map: $font-sizes, $key: xl);
-			color: black;
+	flex-wrap: wrap;
+	.box-servicios {
+		img {
+			@include medidas(1000px, 500px);
+			mask-image: linear-gradient(black 80%, transparent);
+			margin: 40px;
 		}
-		margin: 20px;
+		h1 {
+			font-size: 100px;
+			margin-bottom: 10px;
+		}
+
+		#box-paginas {
+			@include flex(flex, row, center);
+			img {
+				@include medidas(100px, 100px);
+				mask-image: none;
+			}
+		}
 	}
+
+	p {
+		font-size: map-get($map: $font-sizes, $key: xs);
+		color: #191919;
+	}
+	margin: 20px;
 }
 
 .parrafo-main-inicio {
