@@ -17,7 +17,7 @@ header {
 }
 
 .navbar-nav {
-	font-size: map-get($map: $font-sizes, $key: m);
+	font-size: map-get($map: $font-sizes, $key: xxs);
 }
 
 .nav-link {

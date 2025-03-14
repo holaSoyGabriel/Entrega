@@ -1,13 +1,13 @@
 /** @format */
 
-main {
-	 text-align: center;  
-
+.main-servicios {
+	text-align: center;
 	div {
-		h1{
+		h1 {
 			font-size: map-get($map: $font-sizes, $key: xl);
+			color: black;
 		}
-		/* margin: 20px; */
+		margin: 20px;
 	}
 }
 

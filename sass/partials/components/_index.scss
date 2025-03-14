@@ -5,7 +5,7 @@
  */
 
 .main-index {
-	@include flex(flex, row, space-evenly);
+	 @include flex(flex, row, space-evenly); 
 
 	.section-1 {
 		@include flex(flex, column, center);

@@ -62,7 +62,7 @@
     font-size: 30px;
   }
   body .main-index .section-1 p {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 500;
   }
   body .main-index .box-main-img {
@@ -105,7 +105,7 @@ header {
 }
 
 .navbar-nav {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .nav-link {
@@ -129,7 +129,7 @@ footer {
   flex-wrap: wrap;
 }
 footer h2 {
-  font-size: 32px;
+  font-size: 30px;
   color: #887c7c;
 }
 footer .div-footer-1 {
@@ -161,7 +161,7 @@ footer .div-footer-2 .mini-div2 p {
   font-weight: 500;
 }
 footer p {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
 }
 
@@ -176,14 +176,15 @@ body {
 }
 
 /** @format */
-main {
+.main-servicios {
   text-align: center;
 }
-main div {
-  /* margin: 20px; */
+.main-servicios div {
+  margin: 20px;
 }
-main div h1 {
-  font-size: 32px;
+.main-servicios div h1 {
+  font-size: 50px;
+  color: black;
 }
 
 .parrafo-main-inicio {

@@ -8,7 +8,7 @@ footer {
 	flex-wrap: wrap;
 
 	h2 {
-		font-size: map-get($map: $font-sizes, $key: xl);
+		font-size: map-get($map: $font-sizes, $key: m);
 		color: #887c7c;
 	}
 	.div-footer-1 {
@@ -35,7 +35,7 @@ footer {
 		}
 	}
 	p {
-		font-size: map-get($map: $font-sizes, $key: xs);
+		font-size: map-get($map: $font-sizes, $key: xxs);
 		font-weight: 400;
 	}
 }
