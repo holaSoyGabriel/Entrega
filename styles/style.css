@@ -53,22 +53,22 @@
     align-items: center;
     padding-bottom: 20px;
   }
-  body main {
+  body .main-index {
     flex-wrap: wrap;
     text-align: center;
   }
-  body main .section-1 h1 {
+  body .main-index .section-1 h1 {
     font-weight: 600;
     font-size: 30px;
   }
-  body main .section-1 p {
+  body .main-index .section-1 p {
     font-size: 14px;
     font-weight: 500;
   }
-  body main .box-main-img {
+  body .main-index .box-main-img {
     text-align: center;
   }
-  body main .box-main-img img {
+  body .main-index .box-main-img img {
     width: 350px;
     height: 300px;
     margin: 30px 10px 30px 10px;
