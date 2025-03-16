@@ -1,7 +1,7 @@
 /** @format */
 
 footer {
-	background-color: rgba(232, 232, 232, 255);
+	background-color: $color-background-footer;
 	margin: 10px 10px 10px 10px;
 	padding: 30px;
 	@include flex(flex, row, space-between);

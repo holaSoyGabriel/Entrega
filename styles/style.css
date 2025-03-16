@@ -10,7 +10,7 @@
 /** @format */
 /** @format */
 /** @format */
-/* #847c7c #cfcdc7*/
+/*  */
 /* Components */
 /**
  * Home
@@ -120,7 +120,7 @@ nav a:hover {
 
 /** @format */
 footer {
-  background-color: rgb(232, 232, 232);
+  background-color: #ced8d8;
   margin: 10px 10px 10px 10px;
   padding: 30px;
   display: flex;
@@ -167,7 +167,7 @@ footer p {
 
 /** @format */
 body {
-  background-image: linear-gradient(to right, #cfcdc7, #847c7c);
+  background-image: linear-gradient(to right, #ef9c56, #cfcdc7);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -185,21 +185,45 @@ body {
   width: 1000px;
   height: 500px;
   mask-image: linear-gradient(black 80%, transparent);
+  /* object-fit: cover; */
   margin: 40px;
 }
 .main-servicios .box-servicios h1 {
   font-size: 100px;
+  color: rgb(17, 16, 16);
   margin-bottom: 10px;
 }
 .main-servicios .box-servicios #box-paginas {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  gap: 30px;
 }
-.main-servicios .box-servicios #box-paginas img {
-  width: 100px;
-  height: 100px;
+.main-servicios .box-servicios #box-paginas .mini-box1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  background-color: #efd3af;
+  border-radius: 4px;
+  box-shadow: 7px 13px 37px #232222;
+}
+.main-servicios .box-servicios #box-paginas .mini-box1 a {
+  margin: 5px;
+}
+.main-servicios .box-servicios #box-paginas .mini-box1 p {
+  text-align: justify;
+  font-size: 20px;
+  padding: 10px;
+}
+.main-servicios .box-servicios #box-paginas .mini-box1 img {
+  width: 300px;
+  height: 300px;
+  margin: auto;
   mask-image: none;
+  object-fit: contain;
 }
 .main-servicios p {
   font-size: 20px;
