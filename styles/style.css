@@ -308,9 +308,6 @@ body {
     font-size: 15px;
   }
 }
-/* Inicio */
-/* Contactanos */
-/* Sobre Nosotros */
 .card-container {
   margin: 32px 0px;
   display: flex;
@@ -400,6 +397,9 @@ body {
   height: 62px;
 }
 
+/* Inicio */
+/* Contactanos */
+/* Sobre Nosotros */
 /* Tips y Consejos */
 .main-tips {
   align-items: center;
