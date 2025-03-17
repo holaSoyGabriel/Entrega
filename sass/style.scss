@@ -24,63 +24,7 @@
 
 /* Contactanos */
 
-.main-contact {
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: space-evenly;
-}
 
-.box-main-contact {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 300px;
-}
-
-.h1-contact {
-	font-size: 60px;
-	font-weight: bold;
-}
-
-.h2-contact {
-	text-align: center;
-	font-size: 17px;
-}
-
-.form-message {
-	width: 400px;
-	height: 700px;
-	padding: 20px;
-	margin-top: 20px;
-	margin-bottom: 30px;
-	border-radius: 4px;
-	color: black;
-	box-shadow: 7px 13px 37px #000;
-}
-
-.controls {
-	width: 100%;
-	border-radius: 4px;
-	margin-bottom: 16px;
-	border: 1px solid black;
-	color: black;
-}
-
-.buttons {
-	width: 100%;
-	background: #fdf5e6;
-	border: none;
-	padding: 8px;
-	font-size: 17px;
-}
-
-.parrafo-main-contact {
-	text-align: justify;
-	padding: 1rem;
-	font-weight: 600;
-}
 
 /* Sobre Nosotros */
 
