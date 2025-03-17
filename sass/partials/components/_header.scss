@@ -29,3 +29,11 @@ header {
 nav a:hover {
 	color: #bababa;
 }
+
+@media (min-width: 350px) and (max-width: 728px) {
+	header {
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 20px;
+	}
+}

@@ -5,6 +5,11 @@ body {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	 background-attachment: fixed; 
+	background-attachment: fixed;
 	font-family: "Poppins", serif;
+}
+@media (min-width: 350px) and (max-width: 728px) {
+	body {
+		@include flex(flex, column, center);
+	}
 }

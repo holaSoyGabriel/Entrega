@@ -5,7 +5,7 @@
  */
 
 .main-index {
-	 @include flex(flex, row, space-evenly); 
+	@include flex(flex, row, space-evenly);
 
 	.section-1 {
 		@include flex(flex, column, center);
@@ -29,42 +29,24 @@
 }
 
 @media (min-width: 350px) and (max-width: 728px) {
-	body {
-		@include flex(flex, column, center);
-		header { 
-			flex-direction: column;
-			align-items: center;
-			padding-bottom: 20px;
+	.main-index {
+		flex-wrap: wrap;
+		text-align: center;
+		.section-1 {
+			h1 {
+				font-weight: 600;
+				font-size: 30px;
+			}
+			p {
+				font-size: map-get($map: $font-sizes, $key: xs);
+				font-weight: 500;
+			}
 		}
-		.main-index {
-			flex-wrap: wrap;
+		.box-main-img {
 			text-align: center;
-			.section-1 {
-				h1 {
-					font-weight: 600;
-					font-size: 30px;
-				}
-				p {
-					font-size: map-get($map: $font-sizes, $key: xs);
-					font-weight: 500;
-				}
-			}
-			.box-main-img {
-				text-align: center;
-				img {
-					@include medidas(350px, 300px);
-					margin: 30px 10px 30px 10px;
-				}
-			}
-		}
-		footer {
-			padding: 10px;
-			@include flex(flex, column-reverse, center);
-			.div-footer-1 {
-				text-align: center;
-			}
-			.div-footer-2 {
-				text-align: center;
+			img {
+				@include medidas(350px, 300px);
+				margin: 30px 10px 30px 10px;
 			}
 		}
 	}
