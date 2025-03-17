@@ -199,6 +199,7 @@ body {
   justify-content: space-evenly;
   padding: 20px;
   gap: 30px;
+  flex-wrap: wrap;
 }
 .main-servicios .box-servicios #box-paginas .mini-box1 {
   display: flex;
@@ -219,8 +220,8 @@ body {
   padding: 10px;
 }
 .main-servicios .box-servicios #box-paginas .mini-box1 img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   margin: auto;
   mask-image: none;
   object-fit: contain;
