@@ -291,6 +291,23 @@ body {
   box-shadow: 7px 13px 37px #000;
 }
 
+@media (min-width: 350px) and (max-width: 728px) {
+  .main-contact .box-main-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    height: 500px;
+    text-align: center;
+    align-items: center;
+  }
+  .main-contact .box-main-contact h1 {
+    font-size: 50px;
+  }
+  .main-contact .box-main-contact h2 {
+    font-size: 15px;
+  }
+}
 /* Inicio */
 /* Contactanos */
 /* Sobre Nosotros */

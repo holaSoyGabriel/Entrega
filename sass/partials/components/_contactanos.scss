@@ -6,8 +6,8 @@
 	flex-wrap: wrap;
 
 	.box-main-contact {
-        @include flex(flex,column, center);
-        @include medidas (400px, 700px);
+		@include flex(flex, column, center);
+		@include medidas(400px, 700px);
 		text-align: justify;
 
 		h1 {
@@ -25,14 +25,28 @@
 	.form-message {
 		text-align: justify;
 		padding: 20px;
-        background-color: $color-background-form;
+		background-color: $color-background-form;
 		margin-top: 20px;
 		margin-bottom: 30px;
 		border-radius: 4px;
 		color: black;
 		box-shadow: 7px 13px 37px #000;
-		
 	}
 }
 
-
+@media (min-width: 350px) and (max-width: 728px) {
+	.main-contact {
+		.box-main-contact {
+			@include flex(flex, column, center);
+			@include medidas(350px, 500px);
+            text-align: center;
+			align-items: center;
+			h1 {
+				font-size: 50px;
+			}
+            h2{
+                font-size: map-get($map: $font-sizes, $key: xxs);
+            }
+		}
+	}
+}
