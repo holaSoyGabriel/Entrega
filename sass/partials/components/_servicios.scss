@@ -72,3 +72,14 @@
 		}
 	}
 }
+
+@media (min-width: 729px) and (max-width: 1024px){
+	.main-servicios{
+		.box-servicios{
+			img {
+				@include medidas(750px, 500px);
+				margin: 20px;
+			}
+		}
+	}
+}

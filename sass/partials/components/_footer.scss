@@ -52,3 +52,17 @@ footer {
 		}
 	}
 }
+
+@media (min-width: 729px) and (max-width: 1024px) {
+	footer {
+		align-items: center;
+		padding: 10px;
+		@include flex(flex, column, center);
+		.div-footer-1 {
+			text-align: center;
+		}
+		.div-footer-2 {
+			text-align: center;
+		}
+	}
+}

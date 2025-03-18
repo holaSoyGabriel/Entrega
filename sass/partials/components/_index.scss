@@ -52,4 +52,14 @@
 	}
 }
 
-/* @media (min-width: 350px) and (max-width: 728px) */
+@media (min-width: 729px) and (max-width: 1024px) {
+	.main-index {
+		.box-main-img {
+			text-align: center;
+			img {
+				@include medidas(500px, 500px);
+				margin: 30px 10px 30px 10px;
+			}
+		}
+	}
+}
