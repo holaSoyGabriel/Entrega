@@ -422,13 +422,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 30px 30px 30px 30px;
 }
 .main-tips .box-main-tips h1 {
   font-size: 90px;
+  font-weight: bold;
 }
 .main-tips .box-main-tips h2 {
   font-size: 50px;
-  font-weight: bold;
+  font-weight: 600;
 }
 .main-tips .box-main-tips h3 {
   font-size: 25px;
@@ -437,27 +439,42 @@ body {
 }
 .main-tips .box-main-tips-list {
   margin: 30px;
+  flex-wrap: wrap;
   text-align: justify;
 }
-
-#li-tips {
-  text-align: justify;
+.main-tips .box-main-tips-list ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-tips .box-main-tips-list ol li {
+  font-size: 30px;
+}
+.main-tips .box-main-tips-list ol img {
+  margin: 30px;
+  width: 800px;
+  height: 500px;
 }
 
-.parrafo-main-tips {
-  color: #000;
-  text-align: center;
-  font-weight: 500;
-}
-
-.a-li {
-  text-decoration: none;
-  color: black;
-  font-weight: 700;
-}
-
-a:hover {
-  color: #bababa;
+@media (min-width: 350px) and (max-width: 728px) {
+  .main-tips .box-main-tips {
+    margin: 20px;
+  }
+  .main-tips .box-main-tips h1 {
+    font-size: 65px;
+  }
+  .main-tips .box-main-tips h2 {
+    font-size: 40px;
+  }
+  .main-tips .box-main-tips-list ol {
+    /* @include flex(flex, column, center);
+    align-items: center; */
+  }
+  .main-tips .box-main-tips-list ol img {
+    width: 350px;
+    height: 300px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

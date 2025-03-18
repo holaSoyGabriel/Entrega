@@ -5,13 +5,15 @@
 
 	.box-main-tips {
 		@include flex(flex, column, center);
+		margin: 30px 30px 30px 30px;
 		h1 {
 			font-size: 90px;
+			font-weight: bold;
 		}
 
 		h2 {
 			font-size: map-get($map: $font-sizes, $key: xl);
-			font-weight: bold;
+			font-weight: 600;
 		}
 
 		h3 {
@@ -22,28 +24,43 @@
 	}
 
 	.box-main-tips-list {
-	
 		margin: 30px;
+		flex-wrap: wrap;
 		text-align: justify;
+		ol {
+			@include flex(flex, column, center);
+			align-items: center;
+            
+			li {
+				font-size: map-get($map: $font-sizes, $key: m);
+			}
+			img {
+				margin: 30px;
+				@include medidas(800px, 500px);
+			}
+		}
 	}
 }
 
-#li-tips {
-	text-align: justify;
-}
-
-.parrafo-main-tips {
-	color: #000;
-	text-align: center;
-	font-weight: 500;
-}
-
-.a-li {
-	text-decoration: none;
-	color: black;
-	font-weight: 700;
-}
-
-a:hover {
-	color: #bababa;
+@media (min-width: 350px) and (max-width: 728px) {
+	.main-tips {
+		.box-main-tips {
+			margin: 20px;
+			h1 {
+				font-size: 65px;
+			}
+			h2 {
+				font-size: map-get($map: $font-sizes, $key: l);
+			}
+		}
+		.box-main-tips-list {
+			ol {
+                /* @include flex(flex, column, center);
+                align-items: center; */
+				img {
+					@include medidas(350px, 300px);
+				}
+			}
+		}
+	}
 }
