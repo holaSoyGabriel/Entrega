@@ -397,6 +397,9 @@ body {
   .main-sn #card-container .card h4 {
     font-size: 30px;
   }
+  .main-sn #card-container .card p {
+    font-size: 19px;
+  }
   .main-sn #redes {
     margin: 10px;
   }
