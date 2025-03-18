@@ -10,7 +10,6 @@
 /** @format */
 /** @format */
 /** @format */
-/*  */
 /* Components */
 /**
  * Home
@@ -212,7 +211,7 @@ body {
   justify-content: center;
   width: 400px;
   height: 400px;
-  background-color: #efd3af;
+  background-color: #F0DFCC;
   border-radius: 4px;
   box-shadow: 7px 13px 37px #232222;
 }
@@ -308,95 +307,113 @@ body {
     font-size: 15px;
   }
 }
-.card-container {
-  margin: 32px 0px;
+/** @format */
+.main-sn #box-main-sn {
+  margin: 50px;
+  text-align: center;
+}
+.main-sn #box-main-sn h1 {
+  font-size: 90px;
+}
+.main-sn #card-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-around;
+  margin: 32px 0px;
+  flex-wrap: wrap;
   gap: 1rem;
 }
-
-.card {
+.main-sn #card-container .card {
   padding: 16px;
   border-radius: 5px;
-  width: 400px;
+  width: 500px;
+  height: 600px;
   box-shadow: 7px 13px 37px #000;
+  background-color: #FFEFD5;
 }
-
-.card-redes {
-  padding: 16px;
-  border-radius: 5px;
-  width: 400px;
+.main-sn #card-container .card h4 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.main-sn #card-container .card p {
+  font-size: 20px;
+}
+.main-sn #redes {
+  margin: 40px 0px 30px 0;
+}
+.main-sn #redes h1 {
+  font-size: 90px;
+  font-weight: bold;
+  text-align: center;
+}
+.main-sn #redes article {
   display: flex;
   flex-direction: column;
-  box-shadow: 7px 13px 37px #000;
-}
-
-.card h4 {
-  font-size: 25px;
-  font-weight: bold;
-  text-align: center;
-}
-
-.card-redes h4 {
-  font-size: 25px;
-  font-weight: bold;
-  text-align: center;
-}
-
-#redes {
-  margin: 10px;
+  justify-content: center;
   align-items: center;
+  text-align: justify;
+  flex-wrap: wrap;
+}
+.main-sn #redes article .redes1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+.main-sn #redes article .redes1 .mini-redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px;
+  gap: 10px;
+}
+.main-sn #redes article .redes1 .mini-redes img {
+  width: 250px;
+  height: 250px;
 }
 
-.card-button-facebook {
-  width: 100px;
-  color: #6495ed;
-  padding: 2px;
-  border: 1px solid #6495ed;
-  border-radius: 5px;
-  display: inline-block;
+@media (min-width: 350px) and (max-width: 728px) {
+  .main-sn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-sn #box-main-sn {
+    text-align: center;
+    margin: auto;
+  }
+  .main-sn #box-main-sn h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+  .main-sn #card-container .card {
+    padding: 5px;
+    width: 400px;
+    height: 570px;
+    text-align: center;
+  }
+  .main-sn #card-container .card h4 {
+    font-size: 30px;
+  }
+  .main-sn #redes {
+    margin: 10px;
+  }
+  .main-sn #redes h1 {
+    font-size: 60px;
+  }
+  .main-sn #redes article .redes1 {
+    display: flex;
+  }
+  .main-sn #redes article .redes1 .mini-redes {
+    margin: 10px;
+  }
+  .main-sn #redes article .redes1 .mini-redes img {
+    width: 200px;
+    height: 200px;
+  }
 }
-
-.card-button-instagram {
-  width: 100px;
-  color: #ff4500;
-  padding: 2px;
-  border: 1px solid #ff4500;
-  border-radius: 5px;
-  display: inline-block;
-}
-
-.card-button-tiktok {
-  width: 100px;
-  color: #00ffff;
-  padding: 2px;
-  border: 1px solid #00ffff;
-  border-radius: 5px;
-  display: inline-block;
-}
-
-.logo-facebook {
-  width: 40px;
-  height: 40px;
-}
-
-.logo-instagram {
-  width: 50px;
-  height: 50px;
-}
-
-.logo-tiktok {
-  width: 50px;
-  height: 50px;
-}
-
-.logo-WhatsApp {
-  width: 62px;
-  height: 62px;
-}
-
 /* Inicio */
 /* Contactanos */
 /* Sobre Nosotros */

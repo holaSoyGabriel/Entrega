@@ -1,88 +1,108 @@
-.card-container {
-	margin: 32px 0px;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	gap: 1rem;
+/** @format */
+
+.main-sn {
+	#box-main-sn {
+		margin: 50px;
+		text-align: center;
+		h1 {
+			font-size: 90px;
+		}
+	}
+
+	#card-container {
+		@include flex(flex, row, space-around);
+		margin: 32px 0px;
+		flex-wrap: wrap;
+		gap: 1rem;
+
+		.card {
+			padding: 16px;
+			border-radius: 5px;
+			@include medidas(500px, 600px);
+			box-shadow: 7px 13px 37px #000;
+			background-color: $color-background-card;
+
+			h4 {
+				font-size: map-get($map: $font-sizes, $key: l);
+				font-weight: bold;
+				text-align: center;
+			}
+
+			p {
+				font-size: map-get($map: $font-sizes, $key: xs);
+			}
+		}
+	}
+	#redes {
+		margin: 40px 0px 30px 0;
+		h1 {
+			font-size: 90px;
+			font-weight: bold;
+			text-align: center;
+		}
+		article {
+			@include flex(flex, column, center);
+			align-items: center;
+			text-align: justify;
+			flex-wrap: wrap;
+
+			.redes1 {
+				
+				@include flex(flex, row, center);
+				margin: 10px;
+				flex-wrap: wrap;
+				.mini-redes {
+					@include flex(flex, column, center);
+					margin: 30px;
+					gap: 10px;
+					img {
+						@include medidas(250px, 250px);
+					}
+				}
+			}
+		}
+	}
 }
 
-.card {
-	padding: 16px;
-	border-radius: 5px;
-	width: 400px;
-	box-shadow: 7px 13px 37px #000;
-}
+@media (min-width: 350px) and (max-width: 728px) {
+	.main-sn {
+		@include flex(flex, column, center);
+		#box-main-sn {
+			text-align: center;
+			margin: auto;
+			h1 {
+				font-size: 60px;
+				text-align: center;
+			}
+		}
 
-.card-redes {
-	padding: 16px;
-	border-radius: 5px;
-	width: 400px;
-	display: flex;
-	flex-direction: column;
-	box-shadow: 7px 13px 37px #000;
-}
+		#card-container {
+			.card {
+				padding: 5px;
+				@include medidas(400px, 570px);
+				text-align: center;
+				h4 {
+					font-size: map-get($map: $font-sizes, $key: m);
+				}
+			}
+		}
+		#redes {
+			margin: 10px;
+			h1 {
+				font-size: 60px;
+			}
 
-.card h4 {
-	font-size: 25px;
-	font-weight: bold;
-	text-align: center;
-}
-
-.card-redes h4 {
-	font-size: 25px;
-	font-weight: bold;
-	text-align: center;
-}
-
-#redes {
-	margin: 10px;
-	align-items: center;
-}
-
-.card-button-facebook {
-	width: 100px;
-	color: #6495ed;
-	padding: 2px;
-	border: 1px solid #6495ed;
-	border-radius: 5px;
-	display: inline-block;
-}
-
-.card-button-instagram {
-	width: 100px;
-	color: #ff4500;
-	padding: 2px;
-	border: 1px solid #ff4500;
-	border-radius: 5px;
-	display: inline-block;
-}
-
-.card-button-tiktok {
-	width: 100px;
-	color: #00ffff;
-	padding: 2px;
-	border: 1px solid #00ffff;
-	border-radius: 5px;
-	display: inline-block;
-}
-
-.logo-facebook {
-	width: 40px;
-	height: 40px;
-}
-
-.logo-instagram {
-	width: 50px;
-	height: 50px;
-}
-
-.logo-tiktok {
-	width: 50px;
-	height: 50px;
-}
-
-.logo-WhatsApp {
-	width: 62px;
-	height: 62px;
+			article{
+				.redes1{
+					display: flex;
+					.mini-redes{
+						margin: 10px;
+						img{
+							@include medidas(200px, 200px);
+						}
+					}
+				}
+			}
+		}
+	}
 }

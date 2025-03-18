@@ -10,6 +10,12 @@
             rel="stylesheet"
             integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
             crossorigin="anonymous">
+        <!-- Animated -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <!-- AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="../styles/style.css">
         <link rel="icon" href="../assest/icons/emocion.png">
         <title>MentalHealth</title>
@@ -17,7 +23,7 @@
     <body>
         <header>
             <div>
-                <nav class="icon">
+                <nav class="animate__animated animate__backInDown icon">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="../index.html">
                             <img src="../assest/icons/emocion.png" alt="Logo"
@@ -27,7 +33,7 @@
                     </div>
                 </nav>
             </div>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
 
                     <button class="navbar-toggler" type="button"
@@ -40,17 +46,21 @@
                     <div class="collapse navbar-collapse"
                         id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-link"
+                            <a
+                                class="animate__animated animate__backInDown nav-link"
                                 href="../index.html">Home</a>
 
-                            <a class="nav-link"
-                                href="../pages/servicios.html">servicios</a>
+                            <a
+                                class="animate__animated animate__backInDown nav-link"
+                                href="../pages/servicios.html">Servicios</a>
 
-                            <a class="nav-link"
+                            <a
+                                class="animate__animated animate__backInDown nav-link"
                                 href="../pages/Tips_y_Consejos.html">Tips y
                                 Consejos</a>
 
-                            <a class="nav-link"
+                            <a
+                                class="animate__animated animate__backInDown nav-link"
                                 href="../pages/Contactanos.html">Contactanos</a>
 
                         </div>
@@ -59,88 +69,128 @@
             </nav>
         </header>
 
-        <main>
-            <section class="card-container">
-
-                <article class="card">
+        <main class="main-sn">
+            <section id="box-main-sn">
+                <h1 class="animate__animated animate__fadeIn">
+                    Hey!
+                    <br>
+                    <strong>Dejanos ponerte en contexto 😊</strong>
+                </h1>
+            </section>
+            <section id="card-container">
+                <article
+                    class="animate__animated animate__fadeInBottomLeft card">
                     <h4>¿Quiénes somos?</h4>
                     <p>
-
                         Somos un equipo de profesionales apasionados por el
-                        bienestar mental y emocional de las personas. Con una
+                        bienestar mental y emocional de las personas. Con
+                        una
                         sólida formación y experiencia en psicología,
-                        psiquiatría y terapias complementarias, nos dedicamos a
-                        proporcionar un espacio seguro y de apoyo para quienes
-                        buscan mejorar su salud mental. Creemos en un enfoque
-                        holístico que considera todas las dimensiones del ser
-                        humano y trabajamos de manera personalizada para ayudar
+                        psiquiatría y terapias complementarias, nos
+                        dedicamos a
+                        proporcionar un espacio seguro y de apoyo para
+                        quienes
+                        buscan mejorar su salud mental. Creemos en un
+                        enfoque
+                        holístico que considera todas las dimensiones del
+                        ser
+                        humano y trabajamos de manera personalizada para
+                        ayudar
                         a cada individuo a encontrar el equilibrio y la paz
-                        interior. Nuestro compromiso es acompañarte en cada paso
-                        de tu camino hacia una vida más plena y saludable.</p>
+                        interior. Nuestro compromiso es acompañarte en cada
+                        paso
+                        de tu camino hacia una vida más plena y
+                        saludable.</p>
                 </article>
 
-                <article class="card">
+                <article
+                    class="animate__animated animate__fadeInBottomRight card">
                     <h4>¿Cual es nuestro objetivo?</h4>
                     <p>
                         Nuestro objetivo es promover el bienestar mental y
                         emocional de cada persona que acude a nosotros,
-                        proporcionando herramientas y recursos para enfrentar
+                        proporcionando herramientas y recursos para
+                        enfrentar
                         los desafíos de la vida. Nos esforzamos por crear un
-                        entorno acogedor y seguro donde todos puedan explorar y
+                        entorno acogedor y seguro donde todos puedan
+                        explorar y
                         desarrollar su potencial, mejorar sus relaciones y
                         encontrar un mayor sentido de satisfacción y paz
                         interior. A través de una atención integral y
-                        personalizada, buscamos empoderar a nuestros pacientes
+                        personalizada, buscamos empoderar a nuestros
+                        pacientes
                         para que alcancen una vida plena y equilibrada.</p>
                 </article>
 
-                <article class="card-redes">
-                    <h4>Apoyanos en redes sociales</h4>
-                    <div id="redes">
-                        <img class="logo-facebook"
-                            src="../assest/icons/Facebook_Logo_(2019).png"
-                            alt="logo-facebook"> <a class="card-button-facebook"
-                            href="https://www.facebook.com/profile.php?id=61560862363360">Facebook</a>
-                    </div>
+            </section>
 
-                    <div id="redes">
-                        <img class="logo-instagram"
-                            src="../assest/icons/logo_Instagram.jpg"
-                            alt="logo-instagram"> <a
-                            class="card-button-instagram"
-                            href="https://www.instagram.com/hola_soy_gabriel.dh/">Instagram</a>
-                    </div>
+            <section id="redes">
+                <h1 data-aos="fade-down">Apoyanos en redes sociales</h1>
+                <article>
 
-                    <div id="redes">
-                        <img class="logo-tiktok"
-                            src="../assest/icons/vecteezy_tiktok-png-icon_16716485.png"
-                            alt="Logo-Tiktok"> <a class="card-button-tiktok"
-                            href="https://www.tiktok.com/@holasoygabriel._?is_from_webapp=1&sender_device=pc">TikTok</a>
-                    </div>
+                    <section class="redes1">
+                        <div data-aos="fade-right" class="mini-redes">
+                            <img class="logo-facebook"
+                                src="../assest/icons/Facebook_Logo_(2019).png"
+                                alt="logo-facebook"><a class="btn btn-primary"
+                                href="https://www.facebook.com/angelgabriel41k"
+                                role="button">Facebook</a> </div>
+                        <div data-aos="fade-up" class="mini-redes">
+                            <img class="logo-instagram"
+                                src="../assest/icons/Instagram_icon.png.webp"
+                                alt="logo-instagram"> <a class="btn btn-warning"
+                                href="https://www.instagram.com/hola_soy_gabriel.dh/"
+                                role="button">Instagram</a></div>
+                        <div data-aos="fade-left" class="mini-redes">
+                            <img class="logo-tiktok"
+                                src="../assest/icons/vecteezy_tiktok-png-icon_16716485.png"
+                                alt="Logo-Tiktok"> <a class="btn btn-info"
+                                href="https://www.tiktok.com/@holasoygabriel._"
+                                role="button">Tiktok</a>
+                        </div>
+                    </section>
 
-                    <h5> O mandanos un mensajito por WhatsApp</h5>
-
-                    <div id="redes">
-                        <img class="logo-WhatsApp"
-                            src="../assest/icons/1671c09a32f98796ede36fabfab4dee7.jpg"
-                            alt="Logo-WhatsApp"> <a href>+58 4247143567</a>
-                    </div>
-
-                    <h6>Estariamos muy agradecido con tu apoyo :)</h6>
+                    <h3>Estariamos muy agradecido con tu apoyo :)</h3>
                 </article>
+
             </section>
 
         </main>
 
         <footer>
 
-            <p class="parrafo-footer">
-                MentalHealth.com © 2024 - 2025. All rights reserved.
-            </p>
+            <div class="div-footer-1">
+                <h2>
+                    MentalHealth
+                </h2>
+                <p>
+                    MentalHealth.com © 2024 - 2025. All rights reserved.
+                </p>
+            </div>
+
+            <div class="div-footer-2">
+
+                <div class="mini-div1">
+                    <h3>Ubicacion</h3>
+                    <p>Calle Los Mejias, Ejido, Merida 5111</p>
+                </div>
+
+                <div class="mini-div2">
+                    <h3>Contacto</h3>
+                    <p>gabriel.hd1206@gmail.com
+                    </p>
+                    <p>+58 424-714-3567</p>
+                </div>
+            </div>
+
         </footer>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+                  AOS.init();
+                </script>
     </body>
 </html>
