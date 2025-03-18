@@ -21,8 +21,8 @@
 			@include medidas(500px, 600px);
 			box-shadow: 7px 13px 37px #000;
 			background-color: $color-background-card;
-
-			h4 {
+			text-align: center;
+			h2 {
 				font-size: map-get($map: $font-sizes, $key: l);
 				font-weight: bold;
 				text-align: center;
@@ -47,7 +47,6 @@
 			flex-wrap: wrap;
 
 			.redes1 {
-				
 				@include flex(flex, row, center);
 				margin: 10px;
 				flex-wrap: wrap;
@@ -84,7 +83,7 @@
 				h2 {
 					font-size: map-get($map: $font-sizes, $key: m);
 				}
-				p{
+				p {
 					font-size: 19px;
 				}
 			}
@@ -95,12 +94,12 @@
 				font-size: 60px;
 			}
 
-			article{
-				.redes1{
+			article {
+				.redes1 {
 					display: flex;
-					.mini-redes{
+					.mini-redes {
 						margin: 10px;
-						img{
+						img {
 							@include medidas(200px, 200px);
 						}
 					}

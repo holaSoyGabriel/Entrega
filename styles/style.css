@@ -370,8 +370,9 @@ body {
   height: 600px;
   box-shadow: 7px 13px 37px #000;
   background-color: #FFEFD5;
+  text-align: center;
 }
-.main-sn #card-container .card h4 {
+.main-sn #card-container .card h2 {
   font-size: 40px;
   font-weight: bold;
   text-align: center;
@@ -434,7 +435,7 @@ body {
     height: 570px;
     text-align: center;
   }
-  .main-sn #card-container .card h4 {
+  .main-sn #card-container .card h2 {
     font-size: 30px;
   }
   .main-sn #card-container .card p {
