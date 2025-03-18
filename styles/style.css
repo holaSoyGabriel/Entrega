@@ -467,9 +467,8 @@ body {
   .main-tips .box-main-tips h2 {
     font-size: 40px;
   }
-  .main-tips .box-main-tips-list ol {
-    /* @include flex(flex, column, center);
-    align-items: center; */
+  .main-tips .box-main-tips-list {
+    text-align: center;
   }
   .main-tips .box-main-tips-list ol img {
     width: 350px;

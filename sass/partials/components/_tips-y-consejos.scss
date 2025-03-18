@@ -54,9 +54,8 @@
 			}
 		}
 		.box-main-tips-list {
+			text-align: center;
 			ol {
-                /* @include flex(flex, column, center);
-                align-items: center; */
 				img {
 					@include medidas(350px, 300px);
 				}
