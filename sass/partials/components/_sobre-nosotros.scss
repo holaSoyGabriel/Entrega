@@ -81,7 +81,7 @@
 				padding: 5px;
 				@include medidas(400px, 570px);
 				text-align: center;
-				h4 {
+				h2 {
 					font-size: map-get($map: $font-sizes, $key: m);
 				}
 				p{
