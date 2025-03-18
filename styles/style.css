@@ -414,36 +414,29 @@ body {
     height: 200px;
   }
 }
-/* Inicio */
-/* Contactanos */
-/* Sobre Nosotros */
-/* Tips y Consejos */
+/** @format */
 .main-tips {
-  align-items: center;
-  height: calc(100vh - 100px);
+  text-align: center;
 }
-
-.box-main-tips {
+.main-tips .box-main-tips {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  justify-content: center;
 }
-
-.h2-tips {
-  font-size: 30px;
+.main-tips .box-main-tips h1 {
+  font-size: 90px;
 }
-
-.h3-tips {
+.main-tips .box-main-tips h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.main-tips .box-main-tips h3 {
   font-size: 25px;
   margin: 10px 10px 10px 10px;
   font-weight: 500;
 }
-
-.box-main-tips-list {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: 10px 30px 10px 30px;
+.main-tips .box-main-tips-list {
+  margin: 30px;
   text-align: justify;
 }
 

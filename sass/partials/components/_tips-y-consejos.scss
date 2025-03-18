@@ -1,0 +1,49 @@
+/** @format */
+
+.main-tips {
+	text-align: center;
+
+	.box-main-tips {
+		@include flex(flex, column, center);
+		h1 {
+			font-size: 90px;
+		}
+
+		h2 {
+			font-size: map-get($map: $font-sizes, $key: xl);
+			font-weight: bold;
+		}
+
+		h3 {
+			font-size: 25px;
+			margin: 10px 10px 10px 10px;
+			font-weight: 500;
+		}
+	}
+
+	.box-main-tips-list {
+	
+		margin: 30px;
+		text-align: justify;
+	}
+}
+
+#li-tips {
+	text-align: justify;
+}
+
+.parrafo-main-tips {
+	color: #000;
+	text-align: center;
+	font-weight: 500;
+}
+
+.a-li {
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+}
+
+a:hover {
+	color: #bababa;
+}
