@@ -33,13 +33,15 @@
 		flex-wrap: wrap;
 		text-align: center;
 		.section-1 {
-			h1 {
-				font-weight: 600;
-				font-size: 30px;
-			}
-			p {
-				font-size: map-get($map: $font-sizes, $key: xs);
-				font-weight: 500;
+			.box-main-h1 {
+				h1 {
+					font-weight: 600;
+					font-size: 30px;
+				}
+				p {
+					font-size: map-get($map: $font-sizes, $key: xs);
+					font-weight: 500;
+				}
 			}
 		}
 		.box-main-img {
@@ -54,11 +56,13 @@
 
 @media (min-width: 729px) and (max-width: 1024px) {
 	.main-index {
-		.box-main-img {
-			text-align: center;
-			img {
-				@include medidas(500px, 500px);
-				margin: 30px 10px 30px 10px;
+		.section-1 {
+			.box-main-img {
+				text-align: center;
+				img {
+					@include medidas(500px, 500px);
+					margin: 30px 10px 30px 10px;
+				}
 			}
 		}
 	}
