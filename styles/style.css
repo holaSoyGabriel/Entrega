@@ -16,6 +16,10 @@
  *
  * @format
  */
+.over-animation {
+  overflow-x: hidden;
+}
+
 .main-index {
   display: flex;
   flex-direction: row;

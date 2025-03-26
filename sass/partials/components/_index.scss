@@ -4,6 +4,10 @@
  * @format
  */
 
+.over-animation{
+	overflow-x: hidden
+}
+
 .main-index {
 	@include flex(flex, row, space-evenly);
 
