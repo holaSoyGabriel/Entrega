@@ -4,9 +4,6 @@
  * @format
  */
 
-.over-animation{
-	overflow-x: hidden
-}
 
 .main-index {
 	@include flex(flex, row, space-evenly);
@@ -33,6 +30,10 @@
 }
 
 @media (min-width: 350px) and (max-width: 728px) {
+	.over-animation{
+		overflow-x: hidden
+	}
+	
 	.main-index {
 		flex-wrap: wrap;
 		text-align: center;
