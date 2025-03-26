@@ -42,9 +42,6 @@
 }
 
 @media (min-width: 350px) and (max-width: 728px) {
-  .over-animation {
-    overflow-x: none;
-  }
   .main-index {
     flex-wrap: wrap;
     text-align: center;
@@ -202,6 +199,7 @@ body {
 
 @media (min-width: 350px) and (max-width: 728px) {
   body {
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
