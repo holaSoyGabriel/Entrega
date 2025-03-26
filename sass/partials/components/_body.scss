@@ -10,7 +10,9 @@ body {
 }
 @media (min-width: 350px) and (max-width: 728px) {
 	body {
-		overflow-x: none;
+		.over-animation{
+			overflow-x: hidden
+		}
 		@include flex(flex, column, center);
 	}
 }
