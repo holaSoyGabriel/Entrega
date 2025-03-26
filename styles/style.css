@@ -43,7 +43,7 @@
 
 @media (min-width: 350px) and (max-width: 728px) {
   .over-animation {
-    overflow-x: hidden;
+    overflow-x: none;
   }
   .main-index {
     flex-wrap: wrap;
