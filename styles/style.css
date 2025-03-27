@@ -17,6 +17,7 @@
  * @format
  */
 .main-index {
+  overflow-x: hidden;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -200,6 +201,7 @@ body {
 
 @media (min-width: 350px) and (max-width: 728px) {
   body {
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
