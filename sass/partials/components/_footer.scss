@@ -101,6 +101,16 @@ footer {
 		.div-footer-2 {
 			text-align: center;
 
+			.mini-div1 {
+				margin-right: 10px;
+				h3 {
+					font-size: map-get($map: $font-sizes, $key: xs);
+				}
+				p {
+					font-size: 12px;
+				}
+			}
+
 			.mini-div2 {
 				margin-right: 0px;
 				h3 {

@@ -11,6 +11,7 @@ body {
 }
 @media (min-width: 350px) and (max-width: 728px) {
 	body {
+		overflow-x: hidden;
 		@include flex(flex, column, center);
 	}
 }
