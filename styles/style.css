@@ -417,6 +417,11 @@ body {
   font-family: "Poppins", serif;
   overflow-x: hidden;
 }
+@media (min-width: 320px) and (max-width: 350px) {
+  body body {
+    overflow-x: hidden;
+  }
+}
 
 @media (min-width: 350px) and (max-width: 728px) {
   body {
