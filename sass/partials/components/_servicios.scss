@@ -45,12 +45,39 @@
 			}
 		}
 	}
+}
 
-	p {
-		font-size: map-get($map: $font-sizes, $key: xs);
-		color: #191919;
+@media (min-width: 320px) and (max-width: 350px) {
+	.main-servicios {
+		.box-servicios {
+			h1 {
+				font-size: map-get($map: $font-sizes, $key: l);
+			}
+			img {
+				@include medidas(300px, 300px);
+				margin: 5px;
+			}
+
+			p {
+				font-size: 13px;
+				margin-top: 5px;
+			}
+
+			#box-paginas {
+				padding: 10px;
+				.mini-box1 {
+					@include medidas(390px, 400px);
+					p {
+						font-size: 17px;
+						padding: 10px;
+					}
+					img {
+						@include medidas(250px, 250px);
+					}
+				}
+			}
+		}
 	}
-	margin: 20px;
 }
 
 @media (min-width: 350px) and (max-width: 728px) {
@@ -58,24 +85,38 @@
 		margin: 0px;
 		.box-servicios {
 			h1 {
-				font-size: map-get($map: $font-sizes, $key:xl );
+				font-size: map-get($map: $font-sizes, $key: l);
 			}
 			img {
-				@include medidas(350px, 300px);
+				@include medidas(320px, 300px);
 				margin: 20px;
 			}
 
-			p{
-				font-size: map-get($map: $font-sizes, $key: xxs);
+			p {
+				font-size: 13px;
 				margin: 3px;
+			}
+
+			#box-paginas {
+				padding: 10px;
+				.mini-box1 {
+					@include medidas(390px, 400px);
+					p {
+						font-size: map-get($map: $font-sizes, $key: xs);
+						padding: 10px;
+					}
+					img {
+						@include medidas(300px, 300px);
+					}
+				}
 			}
 		}
 	}
 }
 
-@media (min-width: 729px) and (max-width: 1024px){
-	.main-servicios{
-		.box-servicios{
+@media (min-width: 729px) and (max-width: 1024px) {
+	.main-servicios {
+		.box-servicios {
 			img {
 				@include medidas(750px, 500px);
 				margin: 20px;
