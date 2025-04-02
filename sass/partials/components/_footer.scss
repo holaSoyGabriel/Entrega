@@ -48,6 +48,7 @@ footer {
 
 		.div-footer-1 {
 			@include flex(flex, column, center);
+			text-align: center;
 			h2 {
 				font-size: map-get($map: $font-sizes, $key: m);
 				color: #887c7c;
@@ -59,9 +60,6 @@ footer {
 			}
 		}
 
-		.div-footer-1 {
-			text-align: center;
-		}
 		.div-footer-2 {
 			.mini-div1 {
 				margin-right: 10px;

@@ -325,6 +325,7 @@ footer .div-footer-2 .mini-div2 p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
   }
   footer .div-footer-1 h2 {
     font-size: 30px;
@@ -333,9 +334,6 @@ footer .div-footer-2 .mini-div2 p {
   footer .div-footer-1 p {
     font-size: 15px;
     font-weight: 400;
-  }
-  footer .div-footer-1 {
-    text-align: center;
   }
   footer .div-footer-2 {
     text-align: center;
