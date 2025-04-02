@@ -7,12 +7,17 @@ footer {
 	@include flex(flex, row, space-between);
 	flex-wrap: wrap;
 
-	h2 {
-		font-size: map-get($map: $font-sizes, $key: m);
-		color: #887c7c;
-	}
 	.div-footer-1 {
 		@include flex(flex, column, center);
+		h2 {
+			font-size: map-get($map: $font-sizes, $key: l);
+			color: #887c7c;
+		}
+
+		p {
+			font-size: map-get($map: $font-sizes, $key: xxs);
+			font-weight: 400;
+		}
 	}
 
 	.div-footer-2 {
@@ -34,9 +39,52 @@ footer {
 			}
 		}
 	}
-	p {
-		font-size: map-get($map: $font-sizes, $key: xxs);
-		font-weight: 400;
+}
+
+@media (min-width: 320px) and (max-width: 350px) {
+	footer {
+		padding: 10px;
+		@include flex(flex, column-reverse, center);
+
+		.div-footer-1 {
+			@include flex(flex, column, center);
+			h2 {
+				font-size: map-get($map: $font-sizes, $key: m);
+				color: #887c7c;
+			}
+
+			p {
+				font-size: map-get($map: $font-sizes, $key: xxs);
+				font-weight: 400;
+			}
+		}
+
+		.div-footer-1 {
+			text-align: center;
+		}
+		.div-footer-2 {
+			.mini-div1 {
+				margin-right: 10px;
+				h3 {
+					font-size: map-get($map: $font-sizes, $key: xs);
+				}
+				p {
+					font-size: 11px;
+				}
+			}
+
+			.mini-div2 {
+				margin-right: 0px;
+				h3 {
+					font-size: map-get($map: $font-sizes, $key: xs);
+				}
+				p {
+					font-size: 11px;
+				}
+			}
+
+			text-align: center;
+		}
 	}
 }
 
@@ -46,9 +94,22 @@ footer {
 		@include flex(flex, column-reverse, center);
 		.div-footer-1 {
 			text-align: center;
+			h2 {
+				font-size: map-get($map: $font-sizes, $key: m);
+			}
 		}
 		.div-footer-2 {
 			text-align: center;
+
+			.mini-div2 {
+				margin-right: 0px;
+				h3 {
+					font-size: map-get($map: $font-sizes, $key: xs);
+				}
+				p {
+					font-size: 11px;
+				}
+			}
 		}
 	}
 }

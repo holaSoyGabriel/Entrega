@@ -4,40 +4,93 @@
  * @format
  */
 
-
 .main-index {
-	overflow-x: hidden;
-	@include flex(flex, row, space-evenly);
+	#section-1 {
+		@include flex(flex, row, space-evenly);
+		.box-main-sec1 {
+			@include flex(flex, column, center);
+			@include medidas(450px, 550px);
+			text-align: center;
+			margin: 3px 20px 3px 20px;
 
-	.section-1 {
-		@include flex(flex, column, center);
-		margin-left: 10px;
-
-		h1 {
-			font-weight: 600;
-			font-size: 50px;
-		}
-		p {
-			font-weight: 500;
+			h1 {
+				font-weight: 600;
+				font-size: 50px;
+			}
+			p {
+				font-weight: 500;
+			}
 		}
 	}
 	.box-main-img {
 		img {
-			@include medidas(700px, 600px);
-			display: block;
+			@include medidas(700px, 500px);
+
 			margin: 0 20px;
+		}
+	}
+	#section-2 {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+
+		.box-content1 {
+			@include medidas(40%, 250px);
+			clear: both;
+			background-color: $color-background-mainbox;
+			border-radius: 2px;
+			margin: 12vh 0px 0px 30px;
+			padding: 10px;
+			box-shadow: 7px 13px 37px #000;
+			h2 {
+				text-align: center;
+				font-weight: bold;
+			}
+		}
+
+		.box2 {
+			display: flex;
+			justify-content: flex-end;
+			.box-content2 {
+				@extend .box-content1;
+				margin: 12vh 30px 0px 0px;
+			}
+		}
+		.box-content3 {
+			@extend .box-content1;
+		}
+
+		.box4 {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			margin: 10px 10px 30px 10px;
+			.box-content4 {
+				@extend .box-content1;
+
+				@include medidas(60%, 260px);
+
+				h2 {
+					font-size: map-get($map: $font-sizes, $key: xl);
+				}
+				h3 {
+					font-size: map-get($map: $font-sizes, $key: l);
+				}
+				a {
+					margin: 5px;
+				}
+			}
 		}
 	}
 }
 
-@media (min-width: 350px) and (max-width: 728px) {
-
-	
+@media (min-width: 320px) and (max-width: 350px) {
 	.main-index {
-		flex-wrap: wrap;
-		text-align: center;
-		.section-1 {
-			.box-main-h1 {
+		#section-1 {
+			flex-wrap: wrap;
+			text-align: center;
+			.box-main-sec1 {
+				@include medidas(300px, 300px);
 				h1 {
 					font-weight: 600;
 					font-size: 30px;
@@ -51,8 +104,105 @@
 		.box-main-img {
 			text-align: center;
 			img {
-				@include medidas(350px, 300px);
+				@include medidas(300px, 300px);
 				margin: 30px 10px 30px 10px;
+			}
+		}
+		#section-2 {
+			.box-content1 {
+				@include flex(flex, column, center);
+				text-align: center;
+				align-self: center;
+				@include medidas(70%, 350px);
+				margin: 10px;
+				padding: 10px;
+				h2 {
+					text-align: center;
+					font-weight: bold;
+					font-size: map-get($map: $font-sizes, $key: xs);
+				}
+				p {
+					font-size: 13px;
+				}
+			}
+
+			.box2 {
+				display: flex;
+				justify-content: center;
+			}
+
+			.box4 {
+				.box-content4 {
+					h2 {
+						font-size: map-get($map: $font-sizes, $key: m);
+					}
+					h3 {
+						font-size: map-get($map: $font-sizes, $key: m);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 350px) and (max-width: 728px) {
+	.main-index {
+		#section-1 {
+			flex-wrap: wrap;
+			text-align: center;
+			.box-main-sec1 {
+				@include medidas(300px, 300px);
+				h1 {
+					font-weight: 600;
+					font-size: 35px;
+				}
+				p {
+					font-size: map-get($map: $font-sizes, $key: xs);
+					font-weight: 500;
+				}
+			}
+		}
+		.box-main-img {
+			text-align: center;
+			img {
+				@include medidas(320px, 300px);
+				margin: 30px 10px 30px 10px;
+			}
+		}
+		#section-2 {
+			.box-content1 {
+				@include flex(flex, column, center);
+				align-self: center;
+				text-align: center;
+				@include medidas(70%, 350px);
+				margin: 10px;
+				padding: 10px;
+
+				h2 {
+					text-align: center;
+					font-weight: bold;
+					font-size: map-get($map: $font-sizes, $key: xs);
+				}
+
+				p {
+					font-size: 14px;
+				}
+			}
+
+			.box2 {
+				display: flex;
+				justify-content: center;
+			}
+
+			.box4 {
+				.box-content4 {
+					h2 {
+						font-size: map-get($map: $font-sizes, $key: m);
+					}
+					h3 {
+						font-size: map-get($map: $font-sizes, $key: m);
+					}
+				}
 			}
 		}
 	}
@@ -60,12 +210,30 @@
 
 @media (min-width: 729px) and (max-width: 1024px) {
 	.main-index {
-		.section-1 {
+		#section-1 {
 			.box-main-img {
 				text-align: center;
 				img {
 					@include medidas(500px, 500px);
 					margin: 30px 10px 30px 10px;
+				}
+			}
+		}
+
+		#section-2 {
+			.box-content1 {
+				@include medidas(50%, 300px);
+			}
+
+			.box4 {
+				.box-content4 {
+					@include medidas(60%, 250px);
+					h2 {
+						font-size: map-get($map: $font-sizes, $key: l);
+					}
+					h3 {
+						font-size: map-get($map: $font-sizes, $key: m);
+					}
 				}
 			}
 		}
