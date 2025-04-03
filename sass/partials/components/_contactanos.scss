@@ -8,7 +8,7 @@
 	.box-main-contact {
 		@include flex(flex, column, center);
 		@include medidas(400px, 700px);
-		text-align: justify;
+		text-align: center;
 
 		h1 {
 			font-size: 60px;
@@ -16,9 +16,12 @@
 		}
 		h2 {
 			font-size: 17px;
+			margin: 5px;
 		}
 		img {
 			@include medidas(300px, 300px);
+			align-self: center;
+			margin: 5px;
 		}
 	}
 

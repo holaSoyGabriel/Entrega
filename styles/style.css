@@ -556,7 +556,7 @@ body {
   justify-content: center;
   width: 400px;
   height: 700px;
-  text-align: justify;
+  text-align: center;
 }
 .main-contact .box-main-contact h1 {
   font-size: 60px;
@@ -564,10 +564,13 @@ body {
 }
 .main-contact .box-main-contact h2 {
   font-size: 17px;
+  margin: 5px;
 }
 .main-contact .box-main-contact img {
   width: 300px;
   height: 300px;
+  align-self: center;
+  margin: 5px;
 }
 .main-contact .form-message {
   text-align: justify;
