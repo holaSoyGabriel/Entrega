@@ -121,7 +121,7 @@
 			text-align: center;
 			margin: auto;
 			h1 {
-				font-size: map-get($map: $font-sizes, $key: xl);
+				font-size: map-get($map: $font-sizes, $key: l);
 				text-align: center;
 			}
 		}

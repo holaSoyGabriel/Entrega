@@ -1,9 +1,10 @@
 /** @format */
 
 .main-tips {
-	text-align: center;
+	@include flex(flex, column, center);
 
 	.box-main-tips {
+		text-align: center;
 		@include flex(flex, column, center);
 		margin: 30px 30px 30px 30px;
 		h1 {
@@ -30,7 +31,7 @@
 		ol {
 			@include flex(flex, column, center);
 			align-items: center;
-            
+
 			li {
 				font-size: map-get($map: $font-sizes, $key: m);
 			}
@@ -42,20 +43,51 @@
 	}
 }
 
+@media (min-width: 320px) and (max-width: 350px) {
+	.main-tips {
+		.box-main-tips {
+			margin: 10px;
+			h1 {
+				font-size: map-get($map: $font-sizes, $key: l);
+			}
+			h2 {
+				font-size: map-get($map: $font-sizes, $key: xs);
+			}
+		}
+
+		.box-main-tips-list {
+			ol {
+				padding: 0px;
+				li {
+					font-size: map-get($map: $font-sizes, $key: xxs);
+				}
+
+				img {
+					@include medidas(250px, 250px);
+				}
+			}
+		}
+	}
+}
+
 @media (min-width: 350px) and (max-width: 728px) {
 	.main-tips {
 		.box-main-tips {
 			margin: 20px;
 			h1 {
-				font-size: 65px;
+				font-size: map-get($map: $font-sizes, $key: xl);
 			}
 			h2 {
-				font-size: map-get($map: $font-sizes, $key: l);
+				font-size: map-get($map: $font-sizes, $key: m);
 			}
 		}
 		.box-main-tips-list {
-			text-align: center;
 			ol {
+				padding: 0px;
+				li {
+					font-size: map-get($map: $font-sizes, $key: xs);
+				}
+
 				img {
 					@include medidas(350px, 300px);
 				}
@@ -64,9 +96,9 @@
 	}
 }
 
-@media (min-width: 729px) and (max-width: 1024px){
-	.main-tips{
-		.box-main-tips-list{
+@media (min-width: 729px) and (max-width: 1024px) {
+	.main-tips {
+		.box-main-tips-list {
 			ol {
 				img {
 					@include medidas(650px, 400px);

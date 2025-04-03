@@ -20,6 +20,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .main-index #section-1 .box-main-sec1 {
   display: flex;
@@ -90,7 +91,6 @@
 
 @media (min-width: 320px) and (max-width: 350px) {
   .main-index #section-1 {
-    flex-wrap: wrap;
     text-align: center;
   }
   .main-index #section-1 .box-main-sec1 {
@@ -98,12 +98,10 @@
     height: 300px;
   }
   .main-index #section-1 .box-main-sec1 h1 {
-    font-weight: 600;
     font-size: 30px;
   }
   .main-index #section-1 .box-main-sec1 p {
     font-size: 20px;
-    font-weight: 500;
   }
   .main-index .box-main-img {
     text-align: center;
@@ -126,7 +124,6 @@
   }
   .main-index #section-2 .box-content1 h2, .main-index #section-2 .box2 .box-content2 h2, .main-index #section-2 .box-content3 h2, .main-index #section-2 .box4 .box-content4 h2 {
     text-align: center;
-    font-weight: bold;
     font-size: 20px;
   }
   .main-index #section-2 .box-content1 p, .main-index #section-2 .box2 .box-content2 p, .main-index #section-2 .box-content3 p, .main-index #section-2 .box4 .box-content4 p {
@@ -145,7 +142,6 @@
 }
 @media (min-width: 350px) and (max-width: 728px) {
   .main-index #section-1 {
-    flex-wrap: wrap;
     text-align: center;
   }
   .main-index #section-1 .box-main-sec1 {
@@ -153,12 +149,10 @@
     height: 300px;
   }
   .main-index #section-1 .box-main-sec1 h1 {
-    font-weight: 600;
     font-size: 35px;
   }
   .main-index #section-1 .box-main-sec1 p {
     font-size: 20px;
-    font-weight: 500;
   }
   .main-index .box-main-img {
     text-align: center;
@@ -760,7 +754,7 @@ body {
     margin: auto;
   }
   .main-sn #box-main-sn h1 {
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
   }
   .main-sn #card-container .card {
@@ -802,9 +796,12 @@ body {
 }
 /** @format */
 .main-tips {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .main-tips .box-main-tips {
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -843,18 +840,42 @@ body {
   height: 500px;
 }
 
+@media (min-width: 320px) and (max-width: 350px) {
+  .main-tips .box-main-tips {
+    margin: 10px;
+  }
+  .main-tips .box-main-tips h1 {
+    font-size: 40px;
+  }
+  .main-tips .box-main-tips h2 {
+    font-size: 20px;
+  }
+  .main-tips .box-main-tips-list ol {
+    padding: 0px;
+  }
+  .main-tips .box-main-tips-list ol li {
+    font-size: 15px;
+  }
+  .main-tips .box-main-tips-list ol img {
+    width: 250px;
+    height: 250px;
+  }
+}
 @media (min-width: 350px) and (max-width: 728px) {
   .main-tips .box-main-tips {
     margin: 20px;
   }
   .main-tips .box-main-tips h1 {
-    font-size: 65px;
+    font-size: 50px;
   }
   .main-tips .box-main-tips h2 {
-    font-size: 40px;
+    font-size: 30px;
   }
-  .main-tips .box-main-tips-list {
-    text-align: center;
+  .main-tips .box-main-tips-list ol {
+    padding: 0px;
+  }
+  .main-tips .box-main-tips-list ol li {
+    font-size: 20px;
   }
   .main-tips .box-main-tips-list ol img {
     width: 350px;
