@@ -34,6 +34,29 @@
 	}
 }
 
+@media (min-width: 320px) and (max-width: 350px){
+	.main-contact{
+		.box-main-contact{
+			@include flex(flex, column, center);
+			@include medidas(300px, 400px);
+			text-align: center;
+			align-items: center;
+			h1 {
+				font-size: map-get($map: $font-sizes, $key: l);
+			}
+			h2 {
+				font-size: 11px;
+			}
+
+		}
+
+		.form-message {
+			width: 300px;
+			margin-top: 20px;
+		}
+	}
+}
+
 @media (min-width: 350px) and (max-width: 728px) {
 	.main-contact {
 		.box-main-contact {
@@ -42,11 +65,15 @@
 			text-align: center;
 			align-items: center;
 			h1 {
-				font-size: 50px;
+				font-size: map-get($map: $font-sizes, $key: l);
 			}
 			h2 {
-				font-size: map-get($map: $font-sizes, $key: xxs);
+				font-size: 14px;
 			}
+		}
+
+		.form-message {
+			width: 350px;
 		}
 	}
 }
@@ -55,10 +82,9 @@
 	.main-contact {
 		.box-main-contact {
 			text-align: center;
-			img{
+			img {
 				@include medidas(400px, 500px);
 			}
 		}
-
 	}
 }
