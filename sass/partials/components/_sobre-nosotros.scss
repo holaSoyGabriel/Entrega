@@ -63,6 +63,57 @@
 	}
 }
 
+@media (min-width: 320px) and (max-width: 350px) {
+	.main-sn {
+		#box-main-sn {
+			text-align: center;
+			margin: auto;
+			h1 {
+				font-size: map-get($map: $font-sizes, $key: l);
+			}
+		}
+
+		#card-container {
+			.card {
+				padding: 5px;
+				@include medidas(300px, 440px);
+				@include flex(flex, column, center);
+				text-align: center;
+				h2 {
+					font-size: map-get($map: $font-sizes, $key: xs);
+				}
+				p {
+					font-size: 14px;
+				}
+			}
+		}
+		#redes {
+			margin: 10px;
+			h2 {
+				font-size: map-get($map: $font-sizes, $key: l);
+			}
+
+			article {
+				.redes1 {
+					display: flex;
+					.mini-redes {
+						margin: 10px;
+						img {
+							@include medidas(150px, 150px);
+						}
+					}
+				}
+
+				h3 {
+					padding: 5px;
+					text-align: center;
+					font-size: map-get($map: $font-sizes, $key: xxs);
+				}
+			}
+		}
+	}
+}
+
 @media (min-width: 350px) and (max-width: 728px) {
 	.main-sn {
 		@include flex(flex, column, center);
@@ -78,20 +129,21 @@
 		#card-container {
 			.card {
 				padding: 5px;
-				@include medidas(400px, 570px);
+				@include medidas(300px, 490px);
+				@include flex(flex, column, center);
 				text-align: center;
 				h2 {
 					font-size: map-get($map: $font-sizes, $key: m);
 				}
 				p {
-					font-size: 19px;
+					font-size: map-get($map: $font-sizes, $key: xxs);
 				}
 			}
 		}
 		#redes {
 			margin: 10px;
-			h1 {
-				font-size: 60px;
+			h2 {
+				font-size: map-get($map: $font-sizes, $key: l);
 			}
 
 			article {
@@ -100,9 +152,15 @@
 					.mini-redes {
 						margin: 10px;
 						img {
-							@include medidas(200px, 200px);
+							@include medidas(150px, 150px);
 						}
 					}
+				}
+
+				h3 {
+					padding: 5px;
+					text-align: center;
+					font-size: map-get($map: $font-sizes, $key: xs);
 				}
 			}
 		}
