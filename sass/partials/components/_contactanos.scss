@@ -37,9 +37,9 @@
 	}
 }
 
-@media (min-width: 320px) and (max-width: 350px){
-	.main-contact{
-		.box-main-contact{
+@media (min-width: 320px) and (max-width: 350px) {
+	.main-contact {
+		.box-main-contact {
 			@include flex(flex, column, center);
 			@include medidas(300px, 400px);
 			text-align: center;
@@ -50,7 +50,6 @@
 			h2 {
 				font-size: 11px;
 			}
-
 		}
 
 		.form-message {

@@ -1,5 +1,6 @@
 /** @format */
 
+html,
 body {
 	background-image: $color-background-gradient;
 	background-position: center center;
@@ -7,11 +8,12 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 	font-family: "Poppins", serif;
-
+	width: 100% !important;
+	overflow-x: hidden !important;
 }
 
 @media (min-width: 350px) and (max-width: 728px) {
 	body {
-		@include flex (flex, column, center)
+		@include flex(flex, column, center);
 	}
 }
