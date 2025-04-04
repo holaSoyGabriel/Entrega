@@ -438,7 +438,9 @@ body {
   margin-bottom: 10px;
 }
 .main-servicios .box-servicios p {
+  font-size: 20px;
   margin: 10px;
+  font-weight: 500;
 }
 .main-servicios .box-servicios #box-paginas {
   display: flex;
