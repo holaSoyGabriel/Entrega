@@ -437,6 +437,9 @@ body {
   color: rgb(17, 16, 16);
   margin-bottom: 10px;
 }
+.main-servicios .box-servicios p {
+  margin: 10px;
+}
 .main-servicios .box-servicios #box-paginas {
   display: flex;
   flex-direction: row;
